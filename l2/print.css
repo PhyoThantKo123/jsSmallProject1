@@ -1,0 +1,25 @@
+.noprint{
+	display: none;
+}
+
+.printarea{
+	visibility: visible;
+}
+.header{
+	position: static;
+	-webkit-print-color-adjust: exact;
+
+	padding: 10px 0px;
+}
+.pagebreak{
+	page-break-after: always;
+}
+.content{
+	color: blue;
+	margin: auto;
+	padding: 20px 0px;
+}
+img{
+	width: 300px;
+	height: 250px;
+}

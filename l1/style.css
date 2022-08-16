@@ -1,0 +1,54 @@
+body{
+	font-family: sans-serif;
+}
+.accordion{
+	width: 100%;
+}
+.acc-title{
+	background-color: #777;
+	color: #fff;
+	font-size: 14px;
+
+	user-select: none;
+	cursor: pointer;
+
+	padding: 15px;
+	border-bottom: 1px solid #fff;
+	margin: 0;
+
+	position: relative;
+}
+.acc-title i{
+	margin-right: 10px;
+}
+.acc-title::after{
+	content: '\f067'; /*+*/
+	font-family: 'Font Awesome 5 Free';
+
+	/*position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);*/
+
+	float: right;
+}
+.acc-title.active::after{
+	content: '\f068';
+}
+.acc-title:hover{
+	background-color: steelblue;
+}
+.acc-content{
+	height: 0px;
+	background-color: #f4f4f4;
+	text-indent: 50px;
+	text-align: justify;
+
+	padding: 0px 20px;
+
+	overflow: hidden;
+	transition: height 0.5s;
+}
+.active{
+	background-color: steelblue;
+}
